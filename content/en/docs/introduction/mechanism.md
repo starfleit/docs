@@ -19,7 +19,7 @@ The product of the number of tokens on each side of the pool should remain const
 
 In order to preserve the constant product invariant, STARFLEIT will make prices that ensure the product of resultant balances of the pool is as close as possible to product calculated prior to the trade. With {{< katex >}}X{{< /katex >}} being the current balance of the pool's source asset and and {{< katex >}}Y{{< /katex >}} being that of the target asset:
 
-{{< katex display >}}XY=k=(X+A_{\text{in}})(Y−B_{\text{out}}){{< /katex >}}
+{{< katex display >}}XY=k=(X+A_{\text{in}})(Y-B_{\text{out}}){{< /katex >}}
 
 To determine the proper value of {{< katex >}}B_{out}{{< /katex >}} given the trader's offered asset {{< katex >}}A_{in}{{< /katex >}} :
 
