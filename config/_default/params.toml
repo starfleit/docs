@@ -10,7 +10,7 @@ description = "Technical documentation for the STARFLEIT DEX"
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["STARFLEIT-primary-logo.svg"]
 ogLocale = "en_US"
 domainTLD = "docs-starfleit.netlify.app"
 titleHome = "STARLEIT Docs"

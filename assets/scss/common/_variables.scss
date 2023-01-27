@@ -30,6 +30,14 @@ $color-btn-bg: $pink-500;
 $color-btn-border: darken($pink-500, 5%);
 $color-btn-text: $white;
 
+// STARFLEIT
+
+$starfleit: #642EFF;
+$starfleit-primary: #00ffd1;
+$starfleit-haze: #d4ceff;
+$starfleit-lighten: lighten($starfleit, 5%);
+$primary: $starfleit-primary;
+
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
@@ -63,8 +71,8 @@ $navbar-light-toggler-icon-bg: none;
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white;
-$body-color:                $black;
+$body-bg:                   $starfleit;
+$body-color:                $white;
 
 // Links
 //
@@ -139,7 +147,7 @@ $navbar-padding-x:                  null;
 
 $navbar-nav-link-padding-x:         0.5rem;
 
-$navbar-light-color:                $black;
+$navbar-light-color:                $white;
 $navbar-light-hover-color:          $primary;
 $navbar-light-active-color:         $primary;
 
@@ -188,3 +196,99 @@ $dropdown-config: (
 );
 
 $input-btn-focus-width:       0;
+
+// STARFLEIT
+
+body {
+  --bs-dark-rgb: $white;
+}
+
+body .navbar {
+  background-color: rgba(100, 46, 255, 0.95);
+  border-bottom: 1px solid $starfleit-lighten;
+}
+
+body .offcanvas-header {
+  border-bottom: 1px solid $starfleit-lighten;
+}
+
+body .footer {
+  border-top: 1px solid $starfleit-lighten;
+}
+
+body .docs-navigation {
+  border-top: 1px solid $starfleit-lighten;
+}
+
+body .page-links li:not(:first-child) {
+  border-top: 1px dashed $starfleit-lighten;
+}
+
+body .docs-sidebar {
+  border-right: 1px solid $starfleit-lighten;
+}
+
+body .docs-links,
+body .docs-toc {
+  scrollbar-width: thin;
+  scrollbar-color: $starfleit;
+}
+
+body .docs-links::-webkit-scrollbar-track,
+body .docs-toc::-webkit-scrollbar-track {
+  background: $starfleit;
+}
+
+body .docs-links::-webkit-scrollbar-thumb,
+body .docs-toc::-webkit-scrollbar-thumb {
+  background: $starfleit;
+}
+
+body .docs-links:hover::-webkit-scrollbar-thumb,
+body .docs-toc:hover::-webkit-scrollbar-thumb {
+  background: $starfleit-primary;
+}
+
+body .docs-links::-webkit-scrollbar-thumb:hover,
+body .docs-toc::-webkit-scrollbar-thumb:hover {
+  background: $starfleit-primary;
+}
+
+body .form-control.is-search {
+  background: $starfleit-haze;
+}
+
+body .card {
+  background: $starfleit;
+  color: $starfleit-primary;
+}
+
+body code {
+  background: $starfleit-haze;
+}
+
+body .hljs {
+  background: $starfleit-haze;
+  color: $black;
+}
+
+body .offcanvas {
+  background-color: $starfleit;
+}
+
+body .btn-menu:hover {
+  color: $starfleit-primary;
+  background: transparent;
+}
+
+body .text-muted {
+  color: $white !important;
+}
+
+body .btn-toggle:before {
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280, 255, 209, 0.75%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+}
+
+body .alert-doks {
+  background-color: $starfleit-haze;
+}
