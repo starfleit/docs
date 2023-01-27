@@ -1,3 +1,84 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    // Google Fonts Montserrat
+    local("Montserrat Regular Regular"),   // Full Name
+    local("Montserrat-Regular"),           // PostScript name
+    url("fonts/vendor/montserrat/static/Montserrat-Regular.ttf") format("truetype");
+}
+
+/* montserrat-medium - latin */
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    // Google Fonts Montserrat
+    local("Montserrat Regular Medium"),
+    local("Montserrat-Medium"),
+    url("fonts/vendor/montserrat/static/Montserrat-Medium.ttf") format("truetype");
+}
+
+/* montserrat-bold - latin */
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    // Google Fonts Montserrat
+    local("Montserrat Regular Bold"),
+    local("Montserrat-Bold"),
+    url("fonts/vendor/montserrat/static/Montserrat-Bold.ttf") format("truetype");
+}
+
+/* montserrat-italic - latin */
+@font-face {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    // Google Fonts Montserrat
+    local("Montserrat Italic Italic"),
+    local("Montserrat-Italic"),
+    url("fonts/vendor/montserrat/static/Montserrat-Italic.ttf") format("truetype");
+}
+
+/* montserrat-mediumitalic - latin */
+@font-face {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    // Google Fonts Jost
+    local("Montserrat Italic Medium Italic"),
+    local("MontserratItalic-Medium"),
+      // indestructible Jost*
+    local("Jost* Medium Italic"),
+    local("Jost-MediumItalic"),
+    url("fonts/vendor/montserrat/static/Montserrat-MediumItalic.ttf") format("truetype");
+}
+
+/* montserrat-bolditalic - latin */
+@font-face {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    // Google Fonts Montserrat
+    local("Montserrat Italic Bold Italic"),
+    local("MontserratItalic-Bold"),
+    url("fonts/vendor/montserrat/static/Montserrat-BoldItalic.ttf") format("truetype");
+}
+
 /* jost-regular - latin */
 @font-face {
   font-family: Jost;
