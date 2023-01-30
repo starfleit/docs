@@ -3,7 +3,11 @@ title: Create Your Own Pair
 weight: 30
 ---
 
-PLEASE CHECK [HERE](#important) for additional action on Fetch.ai
+{{< alert context="warning" >}}
+**Important**
+
+If you want to register a brand-new Fetch.ai native or IBC token that are not listed yet, please find STARFLEIT team on [#STARFLEIT channel on Fetch.ai Discord](https://bit.ly/3ra5uMI) (for metadata)
+{{< /alert >}}
 
 ## Instantiation by Contract Address
 
@@ -39,10 +43,6 @@ This is a JSON constructor of pair contract.
   - `asset_infos[x].native_token.denom`: Fetch.ai native / IBC token **denominator** is entered here.
 
 Then, you may execute the contract with the organized JSON above.
-
-## IMPORTANT
-
-- If you want to register a brand-new Fetch.ai native or IBC token that are not listed yet, please find STARFLEIT team on [#STARFLEIT channel on Fetch.ai Discord](https://bit.ly/3ra5uMI) (for metadata)
 
 ## Provide initial liquidity
 
