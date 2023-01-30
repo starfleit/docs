@@ -20,13 +20,13 @@ fetchd query wasm contract-state smart fetch1kmag3937lrl6dtsv29mlfsedzngl9egv5c3
 
 - RESTFul API
 
-```URL
+```url
 <light_clinet_address>/cosmwasm/wasm/v1/contract/<contract_address>/smart/<JSON_formed_message_with_base64>
 ```
 
 ex)
 
-```URL
+```url
 https://rest-dorado.fetch.ai/cosmwasm/wasm/v1/contract/fetch1xjn7ljgkzn8agscr8g6xnnhn3azu3kfkuga8uqufr36sc75f8s0sxyhnyq/smart/eyJwYWlycyI6e319
 ```
 

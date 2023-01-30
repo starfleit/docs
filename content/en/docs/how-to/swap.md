@@ -27,7 +27,7 @@ fetchd tx wasm execute <contract-address> <handle-msg> <coins>
 - `handle-msg`: The method and parameters of the execution, which will be explained following lines
 - `coins`: Transaction execution fee
 
-To learn more about the general rules for `handle-msg`, please refer to this [link]({{< relref "/docs/howto/query" >}}).
+To learn more about the general rules for `handle-msg`, please refer to this [link]({{< relref "/docs/how-to/query" >}}).
 
 ```json
 {

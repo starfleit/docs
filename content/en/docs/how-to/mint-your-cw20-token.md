@@ -8,17 +8,16 @@ weight: 20
 This token contract is implemented under the CW20 standard and it fully supports STARFLEIT feature.
 Except for any function of your token itself contains more than an asset, we recommend minting your own token by **instantiating this binary**, rather than developing your own.
 
----
-> **NOTE**
->
-> We strongly encourage you to create by the pre-stored binary.\
-> There are some advantages below:
->
-> * These token, pair contract codes are well audited and continuously maintained. Don't have to audit for yours additionally.
-> * STARFLEIT only lists Token factory-created pairs.
-> * You don't have to migrate your contract whenever there is any major upgrade of Fetch.ai network. STARFLEIT will help you to migrate so that you don't have to take any action.
->
----
+{{< alert context="info" >}}
+**Note**
+
+We strongly encourage you to create by the pre-stored binary.\
+There are some advantages below:
+
+* These token, pair contract codes are well audited and continuously maintained. Don't have to audit for yours additionally.
+* STARFLEIT only lists Token factory-created pairs.
+* You don't have to migrate your contract whenever there is any major upgrade of Fetch.ai network. STARFLEIT will help you to migrate so that you don't have to take any action.
+{{< /alert >}}
 
 ## How to Mint
 
