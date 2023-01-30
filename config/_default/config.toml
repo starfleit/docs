@@ -1,4 +1,4 @@
-baseurl = "https://docs-starfleit.netlify.app/"
+baseurl = "https://docs.starfleit.io/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true

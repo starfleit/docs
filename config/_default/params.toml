@@ -12,7 +12,7 @@ description = "Technical documentation for the STARFLEIT DEX"
 ## Open Graph
 images = ["STARFLEIT-opengraph-image.jpg"]
 ogLocale = "en_US"
-domainTLD = "docs-starfleit.netlify.app"
+domainTLD = "docs.starfleit.io"
 titleHome = "STARLEIT Docs"
 
 ## Twitter Cards
