@@ -6,6 +6,30 @@ weight: 10
 STARFLEIT is a [Uniswap](https://uniswap.org/)-inspired automated market-maker (AMM) protocol implemented with smart contracts on the Fetch.ai blockchain. This enables a decentralized on-chain exchange for the various assets involved in Fetch.ai ecosystem.
 ***
 
+{{< alert >}}
+**Normal**
+
+STARFLEIT is ...
+{{< /alert >}}
+
+{{< alert context="info" >}}
+**Info**
+
+STARFLEIT is ...
+{{< /alert >}}
+
+{{< alert context="warning" >}}
+**Warning**
+
+STARFLEIT is ...
+{{< /alert >}}
+
+{{< alert context="danger" >}}
+**Danger**
+
+STARFLEIT is ...
+{{< /alert >}}
+
 ## Participants
 
 Users can participate in STARFLEIT as traders, liquidity providers, or both.
