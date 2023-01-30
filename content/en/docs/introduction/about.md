@@ -24,10 +24,13 @@ A **liquidity provider** adds equal value of two assets to their corresponding S
 **STARFLEIT Web Application** is the official web front-end interface for swapping Fetch.ai native tokens and CW20 tokens. The web application is located [here](https://app.starfleit.io).
 
 A wallet is required to interact with STARFLEIT Web Application.
-> For web,
->
-> - [Fetch.ai network wallet](https://chrome.google.com/webstore/detail/fetchai-network-wallet/ellkdbaphhldpeajbepobaecooaoafpg?hl=en-GB)
->
-> And will be more
+
+{{< alert >}}
+For web,
+
+- [Fetch.ai network wallet](https://chrome.google.com/webstore/detail/fetchai-network-wallet/ellkdbaphhldpeajbepobaecooaoafpg?hl=en-GB)
+
+And will be more
+{{< /alert >}}
 
 Before executing a swap in the web application, your connected wallet must have source tokens and transaction fee. Once you generate a transaction in the proper format, it will prompt you to sign the transaction by entering your password.
