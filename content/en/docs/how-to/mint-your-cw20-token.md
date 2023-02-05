@@ -6,7 +6,7 @@ weight: 20
 ## Introduction
 
 This token contract is implemented under the CW20 standard and it fully supports STARFLEIT feature.
-Except for any function of your token itself contains more than an asset, we recommend minting your own token by **instantiating this binary**, rather than developing your own.
+If your token is simply meant to be an asset, we recommend minting your own token by **instantiating this binary**, rather than developing your own.
 
 {{< alert context="info" >}}
 **Note**
@@ -14,7 +14,7 @@ Except for any function of your token itself contains more than an asset, we rec
 We strongly encourage you to create by the pre-stored binary.\
 There are some advantages below:
 
-* These token, pair contract codes are well audited and continuously maintained. Don't have to audit for yours additionally.
+* These token and pair contract codes are well audited and continuously maintained. Don't have to audit for yours additionally.
 * STARFLEIT only lists Token factory-created pairs.
 * You don't have to migrate your contract whenever there is any major upgrade of Fetch.ai network. STARFLEIT will help you to migrate so that you don't have to take any action.
 {{< /alert >}}
@@ -25,13 +25,13 @@ There are some advantages below:
 
 The standard CW20 token is already stored in Fetch.ai network.\
 The code is wrapped based on cw20 [v0.13.2](https://docs.rs/cw20/0.13.2/cw20/index.html) \
-Please check [here]({{< relref "/docs/contract-resources/contract-addresses" >}}) for the more addresses.
+Please check [here]({{< relref "/docs/contract-resources/contract-addresses" >}}) for the token factory addresses.
 
 You may instantiate your own token using the JSON as follows:
 
 ```json
 {
-    "name": "yout_token_name",
+    "name": "your_token_name",
     "symbol": "SYMBOL",
     "decimals": 6,
     "initial_balances": [
