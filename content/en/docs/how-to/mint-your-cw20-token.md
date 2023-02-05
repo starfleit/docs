@@ -25,7 +25,7 @@ There are some advantages below:
 
 The standard CW20 token is already stored in Fetch.ai network.\
 The code is wrapped based on cw20 [v0.13.2](https://docs.rs/cw20/0.13.2/cw20/index.html) \
-Please check [here]({{< relref "/docs/contract-resources/contract-addresses" >}}) for the token factory addresses.
+Please check [here]({{< relref "/docs/contract-resources/contract-addresses" >}}) for addresses and token code IDs.
 
 You may instantiate your own token using the JSON as follows:
 
