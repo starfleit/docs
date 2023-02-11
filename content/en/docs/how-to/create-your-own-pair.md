@@ -6,7 +6,7 @@ weight: 30
 {{< alert context="warning" >}}
 **Important**
 
-If you want to register a brand-new Fetch.ai native or IBC token that is not listed on Starfleit yet, please first send 1 of that token to the [Factory contract address](https://docs.starfleit.io/docs/contract-resources/contract-addresses/), and then find the STARFLEIT team on [#STARFLEIT channel on Fetch.ai Discord](https://bit.ly/3ra5uMI) and let them know the token's contract address (for metadata)
+If you want to register a brand-new Fetch.ai native or IBC token that is not listed on Starfleit yet, please first send 1 of that token to the [Factory contract address](https://docs.starfleit.io/docs/contract-resources/contract-addresses/), and then tag the STARFLEIT team in the [#STARFLEIT channel on the Fetch.ai Discord](https://bit.ly/3ra5uMI) to let them know the token's contract address (for metadata)
 {{< /alert >}}
 
 ## Instantiation by Contract Address
