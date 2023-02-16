@@ -13,6 +13,7 @@ weight: 10
 - FET/MOBX - `fetch13xlavey3hpkj823z7y3gcq9d23ut7829yjjygz3whr2y2kzlprhs2e99tf`
 - MOBX/axlUSDC - `fetch1rv35xwjdswtttq8l925kh2s93kzflpppazdvjmarmrf8f6hd2g7scmvej8`
 - FET/ATOM - `fetch1mm5ql0a5l050g5ye6cd3r0hqjnpa8v60sdrvz0rj0jrgqgy5hwysvcvpt8`
+- FET/OSMO - `fetch1adavpfxyp5kgs3zp0n0vkc37qakeh5eqwxqxzysgg0ahlx82rmsqhjlt46`
 
 ## dorado-1 Testnet
 
