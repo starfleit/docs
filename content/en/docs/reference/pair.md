@@ -33,7 +33,9 @@ The asset can be both a contract-based token and a native token. It can be disti
         "amount": "10"
       }
     ],
-    "slippage_tolerance": 0.1 // optional
+    "receiver": "<Addr>", // optional, LP token receiver
+    "deadline": 1682583565, // optional, unix epoch
+    "slippage_tolerance": "0.005" // optional
   }
 }
 ```
@@ -59,6 +61,7 @@ Swap between the given two tokens. It can be considered as trade.<br />
         "belief_price": 0.1,  // optional
         "max_spread": 0.1, // optional
         "to": "<Addr>", // optional
+        "deadline": 1682583565 // optional, unix epoch
     }
 }
 ```
@@ -81,6 +84,7 @@ Swap between the given two tokens. It can be considered as trade.<br />
                 "belief_price": 0.1,  // optional
                 "max_spread": 0.1, // optional
                 "to": "<Addr>", // optional
+                "deadline": 1682583565 // optional, unix epoch
             }
         })
     }
