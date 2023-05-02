@@ -88,7 +88,7 @@ Select all pairs
 ```json
 {
     "pairs": {
-        "limit": 10 // STRONGLY RECOMMEND, optional, default=10, max=30
+        "limit": 10 // STRONGLY RECOMMENDED, optional, default=10, max=30
     }
 }
 ```
