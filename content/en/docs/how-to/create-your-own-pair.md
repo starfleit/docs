@@ -20,16 +20,22 @@ The JSON message format is as follows:
 ```json
 {
   "create_pair": {
-    "asset_infos": [
+    "assets": [
       {
-        "token": {
-          "contract_addr": "fetch1..."
-        }
+        "info": {
+          "token": {
+            "contract_addr": "fetch1..."
+          }
+        },
+        "amount": "0"
       },
       {
-        "native_token": {
-          "denom": "afet"
-        }
+        "info": {
+          "native_token": {
+            "denom": "afet"
+          }
+        },
+        "amount": "0"
       }
     ]
   }
@@ -37,8 +43,8 @@ The JSON message format is as follows:
 ```
 
 This is a JSON constructor of pair contract. Tokens of pair can be either CW20 tokens or Fetch.ai native tokens(including IBC tokens). Use JSON keys with their corresponding values as described below.
-  - `asset_infos[x].token.contract_addr`: CW20 token **address**
-  - `asset_infos[x].native_token.denom`: Fetch.ai native token(including IBC token) **denominator**
+  - `assets[x].info.token.contract_addr`: CW20 token **address**
+  - `assets[x].info.native_token.denom`: Fetch.ai native token(including IBC token) **denominator**
 
 Then, you may execute the contract with the organized JSON above.
 
