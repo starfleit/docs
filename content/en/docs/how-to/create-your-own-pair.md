@@ -55,7 +55,7 @@ STARFLEIT pair contract derives the swap rate from the amount of the remained as
 {{< alert context="warning" >}}
 **Warning**
 
-In order to prevent LP inflation attacks, when a user provides initial liquidity, the amount of minimum liquidity will belong to the pair contract itself and be permanently locked. Thus, the initial provider should be aware that some of their shares will be sacrificed by the amount of minimum liquidity ('1000') for this protection, and they will receive the amount of LP tokens which the minimum liquidity is deducted from.
+In order to prevent LP inflation attacks, when a user provides initial liquidity, the amount of minimum liquidity will belong to the pair contract itself and be permanently locked. Thus, the initial provider should be aware that some of their shares will be sacrificed by the amount of minimum liquidity (0.001 shares of LP tokens with 6 decimal places, equal to 1000uLp) for this protection, and they will receive the amount of LP tokens which the minimum liquidity is deducted from.
 {{< /alert >}}
 
 ### Increase allowance (CW20 token)
