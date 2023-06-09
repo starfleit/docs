@@ -20,33 +20,43 @@ The JSON message format is as follows:
 ```json
 {
   "create_pair": {
-    "asset_infos": [
+    "assets": [
       {
-        "token": {
-          "contract_addr": "fetch1..."
-        }
+        "info": {
+          "token": {
+            "contract_addr": "fetch1..."
+          }
+        },
+        "amount": "0"
       },
       {
-        "native_token": {
-          "denom": "afet"
-        }
+        "info": {
+          "native_token": {
+            "denom": "afet"
+          }
+        },
+        "amount": "0"
       }
     ]
   }
 }
 ```
 
-This is a JSON constructor of pair contract.
-
-- A token pair can be either, contract-based token, or fetch.ai-native / IBC token
-  - `asset_infos[x].token.contract_addr`: Contract-basd token **address** is entered here.
-  - `asset_infos[x].native_token.denom`: Fetch.ai native / IBC token **denominator** is entered here.
+This is a JSON constructor of pair contract. Tokens of pair can be either CW20 tokens or Fetch.ai native tokens(including IBC tokens). Use JSON keys with their corresponding values as described below.
+  - `assets[x].info.token.contract_addr`: CW20 token **address**
+  - `assets[x].info.native_token.denom`: Fetch.ai native token(including IBC token) **denominator**
 
 Then, you may execute the contract with the organized JSON above.
 
 ## Provide initial liquidity
 
-STARFLEIT pair contract knows the swap rate by the both of the remained assets on the pool. But if you have just created your own pair but no liquidity provided, The contract cannot calculate the rate and all swap & swap simulation raise fail. So, STARFLEIT UI does not list the pair unless the initial liquidity is provided. So, if you want finalize the listing, you should provide the initial liquidity and it should be done on CLI.
+STARFLEIT pair contract derives the swap rate from the amount of the remained assets on the pool. However, if you have just created your own pair and haven't provided its liquidity yet, the contract won't be able to calculate the rate, and all swap simulations and transactions will fail. So, for the pair to work successfully, you should provide the initial liquidity.
+
+{{< alert context="warning" >}}
+**Warning**
+
+In order to prevent LP inflation attacks, when a user provides initial liquidity, the amount of minimum liquidity will belong to the pair contract itself and be permanently locked. Thus, the initial provider should be aware that some of their shares will be sacrificed by the amount of minimum liquidity (0.001 shares of LP tokens with 6 decimal places, equal to 1000uLp) for this protection, and they will receive the amount of LP tokens which the minimum liquidity is deducted from.
+{{< /alert >}}
 
 ### Increase allowance (CW20 token)
 

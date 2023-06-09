@@ -15,16 +15,22 @@ Instantiate a pair from uploaded WASM binary. You may follow JSON attribute by t
 ```json
 {
   "create_pair": {
-    "asset_infos": [
+    "assets": [
       {
-        "token": {
-          "contract_addr": "fetch1..."
-        }
+        "info": {
+          "token": {
+            "contract_addr": "fetch1..."
+          }
+        },
+        "amount": "0"
       },
       {
-        "native_token": {
-          "denom": "afet"
-        }
+        "info": {
+          "native_token": {
+            "denom": "afet"
+          }
+        },
+        "amount": "0"
       }
     ]
   }
@@ -88,7 +94,7 @@ Select all pairs
 ```json
 {
     "pairs": {
-        "limit": 10 // STRONGLY RECOMMEND, optional, default=10, max=30
+        "limit": 10 // STRONGLY RECOMMENDED, optional, default=10, max=30
     }
 }
 ```

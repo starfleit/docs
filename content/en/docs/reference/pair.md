@@ -7,10 +7,15 @@ weight: 30
 
 ### Provide Liquidity
 
-Send user's asset to a STARFLEIT contract in order to provide liquidity.<br />
-**NOTE: You should [allow your allowance]({{< relref "/docs/reference/token" >}}) of the token before providing liquidity!**
+Send user's assets to a STARFLEIT contract in order to provide liquidity.<br />
 
-The asset can be both a contract-based token and a native token. It can be distinguished by the key under `info`: `token` or `native_token`.
+{{< alert >}}
+**Note**
+- You should [increase your allowance]({{< relref "/docs/reference/token#increasedecrease-allowance" >}}) of the token before providing liquidity.
+- Please read [provide initial liquidity]({{< relref "/docs/how-to/create-your-own-pair#provide-initial-liquidity" >}}) carefully so that you can recognize the minimum liquidity deduction if you're the initial provider for the pair.
+{{< /alert >}}
+
+The asset can be both a CW20 token and a native token(including IBC token) and the key under `info`: `token` and `native_token` distinguish them.
 
 ```json
 {
@@ -33,7 +38,9 @@ The asset can be both a contract-based token and a native token. It can be disti
         "amount": "10"
       }
     ],
-    "slippage_tolerance": 0.1 // optional
+    "receiver": "<Addr>", // optional, LP token receiver
+    "deadline": 1682583565, // optional, unix epoch
+    "slippage_tolerance": "0.005" // optional
   }
 }
 ```
@@ -59,6 +66,7 @@ Swap between the given two tokens. It can be considered as trade.<br />
         "belief_price": 0.1,  // optional
         "max_spread": 0.1, // optional
         "to": "<Addr>", // optional
+        "deadline": 1682583565 // optional, unix epoch
     }
 }
 ```
@@ -81,6 +89,7 @@ Swap between the given two tokens. It can be considered as trade.<br />
                 "belief_price": 0.1,  // optional
                 "max_spread": 0.1, // optional
                 "to": "<Addr>", // optional
+                "deadline": 1682583565 // optional, unix epoch
             }
         })
     }

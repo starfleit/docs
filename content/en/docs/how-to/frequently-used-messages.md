@@ -37,7 +37,9 @@ If you are trying to provide cw20 token, increase your allowance first. [Execute
         },
         "amount": "10"
       }
-    ]
+    ],
+    "deadline": 1682583565, // optional
+    "slippage_tolerance": "0.005" // optional
   }
 }
 ```
@@ -53,7 +55,7 @@ Execute the below message via the **Liquidity token contract** address! Not toke
   "send": {
     "contract": "<PairContractAddress>",
     "amount": 123,
-    "msg": "base64-encodedStringOfWithdrawMsg"
+    "msg": "<base64-encodedStringOfWithdrawMsg>"
   },
 }
 ```
@@ -62,7 +64,27 @@ In `send.msg`, you may decode this JSON string into base64 encoding.
 
 ```json
 {
-  "withdraw_liquidity": {}
+  "withdraw_liquidity": {
+    "min_assets": [
+      {
+        "info" : {
+          "token": {
+            "contract_addr": "<Addr>"
+          }
+        },
+        "amount": "10"
+      },
+      {
+        "info" : {
+          "native_token": {
+            "denom": "axpla"
+          }
+        },
+        "amount": "10"
+      }
+    ], // optional
+    "deadline": 1682583565 // optional
+  }
 }
 ```
 
